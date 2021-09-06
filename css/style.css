@@ -240,7 +240,7 @@ button {
 *********************/
 .bg-color--keycolor {
   background-image:  url("../images/metal.png");
-  background-size: 500px;
+  background-size: cover;
   background-position: center;
 }
 
