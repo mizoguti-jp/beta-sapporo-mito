@@ -2,17 +2,8 @@
 /****************************
  * 共通CSSのテンプレートです。
 *****************************/
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 html {
   font-size: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
@@ -51,10 +42,6 @@ input[type=text] {
   font-size: 18px;
   border: none;
   padding: 25px 35px;
-  display: block;
-  margin: 0 auto;
-  max-width: 580px;
-  width: 100%;
 }
 
 ::-webkit-input-placeholder {
@@ -135,15 +122,28 @@ button {
   display: flex;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -10px;
 }
 
-.row + .row {
-  margin-top: 20px;
+.stage .row {
+  margin: -10px -20px;
 }
 
-.column {
-  width: 100%;
+.col-3 {
+  width: calc((100% / 3) - 20px);
+  margin: 10px;
+}
+
+.col-2 {
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+
+.stage .col-2 {
+  width: calc(50% - 40px);
+  margin: 10px 20px;
 }
 
 .card {
@@ -239,23 +239,54 @@ button {
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #39b54a;
+  background-image:  url("../images/metal.png");
+  background-size: 500px;
+  background-position: center;
 }
 
 .bg-color--subcolor {
   background-color: #d9e021;
 }
 
-.bg-color--gray {
-  background-color: #e6e6e6;
+.bg-img {
+  background-image: url("../images/metal.png");
+  background-size: cover;
+  background-position: center;
+
 }
 
 /*********************
 * title
 **********************/
 .main-title {
-  color: #oooocd;
+  text-align: center;
+  font-size: 122px;
+  line-height: 1.09016;
+  font-weight: bold;
+  color: #0000cd;
   margin: 0;
+}
+
+.main-title__wrapper {
+  position: relative;
+}
+
+.main-title--kana {
+  font-size: 10px;
+}
+
+.main-title--shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: transparent;
+  background-image: url("../images/title_bg.png");
+  -webkit-transform: translate(-3.5px, -3.5px);
+          transform: translate(-3.5px, -3.5px);
+  -webkit-background-clip: text;
+  -webkit-text-stroke-color: #d9e021;
+  -webkit-text-stroke-width: 1px;
 }
 
 .sub-title {
@@ -265,7 +296,7 @@ button {
 }
 
 .sub-title__bg {
-  background-color: #fcee21;
+  background-color: #d3d3d3;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -275,7 +306,8 @@ button {
   line-height: 1.75;
   text-align: center;
   padding: 9px 20px;
-  background-color: #d9e021;
+  background-color: #191970;
+  color:#fff;
   margin: 0 -20px 20px -20px;
 }
 
@@ -285,7 +317,7 @@ button {
 }
 
 .section-title--keycolorlight {
-  background-color: #8cc63f;
+  background-color: #191970;
 }
 
 .section-title--keycolorlight .section-title__stage {
@@ -293,12 +325,13 @@ button {
 }
 
 .section-title--keycolor {
-  background-color: #39b54a;
+  background-color: #191970;
 }
 
 .section-title--story {
-  width: 330px;
+  width: 290px;
   margin: 0 auto 20px;
+  color:#fff;
 }
 
 .section-title--border {
@@ -308,7 +341,7 @@ button {
   line-height: 1.06667;
   margin: 0;
   padding-bottom: 15px;
-  color: #006837;
+  color: #000070;
 }
 
 .section-title--border::after {
@@ -337,7 +370,7 @@ button {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  background-color: #006837;
+  background-color: #191970;
   color: #fff;
   font-size: 24px;
   line-height: 1.54167;
@@ -384,8 +417,8 @@ button {
 }
 
 .header__logo {
-  width: 330px;
-  height: 42px;
+  width: 200px;
+  height: 42.8px;
 }
 
 .header__name {
@@ -408,6 +441,19 @@ button {
 /********************
 * main
 ********************/
+.top-image {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main-title__wrapper {
+  margin: 30px 0 0;
+}
+
 .story__note {
   margin: 0;
 }
@@ -426,7 +472,7 @@ button {
 
 @media screen and (max-width: 940px) {
   .story__note__outer {
-    width: 100%;
+    width: calc(100% - 40px);
   }
 }
 
@@ -439,6 +485,24 @@ button {
   margin-bottom: 20px;
   line-height: 80px;
   word-spacing: 20px;
+}
+
+.answer + .answer {
+  margin-top: 40px;
+}
+
+.answer__container {
+  margin-top: 80px;
+}
+
+.answer__1word {
+  display: block;
+  margin: 0 auto;
+  width: 510px;
+}
+
+.answer__incolumn {
+  width: calc(100% - 70px);
 }
 
 .err-message {
