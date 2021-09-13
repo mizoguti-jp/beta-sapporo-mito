@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/game.css">
-  <script src="https://unpkg.com/vue@next"></script>
-  <script src="js/main.js"></script>
-  <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <svg width="0" height="0" class="hidden">
@@ -37,15 +34,15 @@
         クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
         v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
       ----------------------------------------------------------------------->
-<!-- <div v-if="next['stage1']" id="sectionStage2" class="stage">
+<div v-if="next['stage1']" id="sectionStage2" class="stage">
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>貨物室の扉を開けよう！</h2>
-              <p class="text-center">マニュアルによると助けるには貨物室に行き<br>
-                ダクトを通って助けるのが良さそうだ<br>
-                しかし、貨物室に鍵がかかっている</br>
-               「うーん、僕には解けそうもない。君はわかるかい？」</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span><ruby><rb>貨物室</rb><rt>かもつしつ</rt></ruby>の<ruby><rb>扉</rb><rt>とびら</rt></ruby>を<ruby><rb>開</rb><rt>あ</rt></ruby>けよう！</h2>
+              <p class="text-center">マニュアルによると<ruby><rb>助</rb><rt>たす</rt></ruby>けるには<ruby><rb>貨物室</rb><rt>かもつしつ</rt></ruby>に<ruby><rb>行</rb><rt>い</rt></ruby>き<br>
+                ダクトを<ruby><rb>通</rb><rt>とお</rt></ruby>って<ruby><rb>助</rb><rt>たす</rt></ruby>けるのが<ruby><rb>良</rb><rt>よ</rt></ruby>さそうだ<br>
+                しかし、<ruby><rb>貨物室</rb><rt>かもつしつ</rt></ruby>に<ruby><rb>鍵</rb><rt>かぎ</rt></ruby>がかかっている</br>
+            「うーん、<ruby><rb>僕</rb><rt>ぼく</rt></ruby>には<ruby><rb>解</rb><rt>と</rt></ruby>けそうもない。<ruby><rb>君</rb><rt>きみ</rt></ruby>はわかるかい？」</p>
             </div>
           </div>
           <div class="stage-column__container section bg-img">
@@ -71,19 +68,19 @@
                   <div class=“squares”>
                     <table align=“center”>
                       <tr>
-                        <td id=“0”onclick=“game(0);“>太</td>
-                        <td id=“1”onclick=“game(1);“>地</td>
-                        <td id=“2”onclick=“game(2);“>火</td>
+                        <td id=“0” onclick=“game(0);“>太</td>
+                        <td id=“1” onclick=“game(1);“>地</td>
+                        <td id=“2” onclick=“game(2);“>火</td>
                       </tr>
                       <tr>
-                        <td id=“3”onclick=“game(3);“>水</td>
-                        <td id=“4”onclick=“game(4);“>金</td>
-                        <td id=“5”onclick=“game(5);“>木</td>
+                        <td id=“3” onclick=“game(3);“>水</td>
+                        <td id=“4” onclick=“game(4);“>金</td>
+                        <td id=“5” onclick=“game(5);“>木</td>
                       </tr>
                       <tr>
-                        <td id=“6”onclick=“game(6);“>海</td>
-                        <td id=“7”onclick=“game(7);“>天</td>
-                        <td id=“8”onclick=“game(8);“>土</td>
+                        <td id=“6” onclick=“game(6);“>海</td>
+                        <td id=“7” onclick=“game(7);“>天</td>
+                        <td id=“8” onclick=“game(8);“>土</td>
                       </tr>
                     </table>
                   </div>
@@ -152,5 +149,9 @@
         <p class="text-center">株式会社SCRAPとN・S高で実施した授業「リアル脱出ゲームの作り方」の一環で<br>生徒が制作したものであり、SCRAPが主催/公認するものではありません。</p>
     </div>
   </footer>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/game.js"></script>
 </body>
 </html>
