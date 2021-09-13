@@ -336,6 +336,10 @@ button {
   width: 190px;
 }
 
+.question-memo{
+  background-image: url("../images/memo01.png");
+}
+
 
 /******************
 * text
