@@ -251,6 +251,10 @@ button {
   background-color: #708090;
 }
 
+.bg-color--white{
+  background-color: white;
+}
+  
 .bg-img{
   background-image: url("../images/metal.png");
   background-size: 809px;
