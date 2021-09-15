@@ -35,7 +35,7 @@
         <!-- STAGE1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">ミッション3</span><ruby><rb>脱出</rb><rt>だっしゅつ</rt></ruby>ポッドの<ruby><rb>鍵</rb><rt>かぎ</rt><ruby>を<ruby><rb>開</rb><rt>あ</rt></ruby>けよう</h2>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">ミッション2</span><ruby><rb>脱出</rb><rt>だっしゅつ</rt></ruby>ポッドの<ruby><rb>鍵</rb><rt>かぎ</rt><ruby>を<ruby><rb>開</rb><rt>あ</rt></ruby>けよう</h2>
             <p class=“text-center”>
               <ruby><rb>彼</rb><rt>かれ</rt></ruby>は<ruby><rb>仲間</rb><rt>なかま</rt></ruby>や<ruby><rb>船長</rb><rt>せんちょう</rt></ruby>を<ruby><rb>助</rb><rt>たす</rt></ruby>ける<ruby><rb>事</rb><rt>こと</rt></ruby>ができたようだ<br>
               あとは<ruby><rb>脱出</rb><rt>だっしゅつ</rt></ruby>ポッドにのって<ruby><rb>逃</rb><rt>に</rt></ruby>げるだけだ<br>
@@ -86,11 +86,11 @@ Youtube貼り付けここまで -->
           v-if="clear['stage1']"はclear['stage1']がtrueになったら表示します。
           v-bind:class="{isClear:clear['stage1']}"はclear['stage1']がtrueになったら「isClear」クラスを追加します。
         -------------------------------------------------------------------------------------------------------->
-        <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
+        <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
 
-              <div class="clear-message__title">ミッション3　クリア！</div>
+              <div class="clear-message__title">ミッション2　クリア！</div>
               <div class="clear-message__content"><ruby><rb>脱出</rb><rt>だっしゅつ</rt></ruby>ポッドのパスワードが<ruby><rb>開</rb><rt>ひら</rt></ruby>いた！<br>
               あとは<ruby><rb>乗</rb><rt>の</rt></ruby>り<ruby><rb>込</rb><rt>こ</rt></ruby>んで<ruby><rb>脱出</rb><rt>だっしゅつ</rt></ruby>するだけだ！
               </div>
