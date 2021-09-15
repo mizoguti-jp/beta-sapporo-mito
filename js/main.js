@@ -131,35 +131,35 @@ app.mount('#stage')
 
 
 // こっから一筆書きのヤツ
-var order = 0;
-var score = 1;
-var trueList = [0,3,4,1,2,5,8,7,6];
+// var order = 0;
+// var score = 1;
+// var trueList = [0,3,4,1,2,5,8,7,6];
 
 
 
-function game(input){
-  if(input == 9){
-    if(score == 1){
-      alert("OK");
-      // ここに正解の時のリンク
-    } else{
-      alert("NG");
-      // ここに失敗の時のリンク
-    }
-  } else{
-    // alert(order);
-    // alert(score);
-    if(input == trueList[order]){
-     score *= 1;
-    //  alert(order);
-    } else{
-     score *= 0;
-    //  alert(order);
-    }
-    order++;
-  }
-}
+// function game(input){
+//   if(input == 9){
+//     if(score == 1){
+//       alert("OK");
+//       // ここに正解の時のリンク
+//     } else{
+//       alert("NG");
+//       // ここに失敗の時のリンク
+//     }
+//   } else{
+//     // alert(order);
+//     // alert(score);
+//     if(input == trueList[order]){
+//      score *= 1;
+//     //  alert(order);
+//     } else{
+//      score *= 0;
+//     //  alert(order);
+//     }
+//     order++;
+//   }
+// }
 
-function reset(){
-  location.reload();
-}
+// function reset(){
+//   location.reload();
+// }
