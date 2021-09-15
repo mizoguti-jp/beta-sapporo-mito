@@ -34,7 +34,7 @@
         クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
         v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
       ----------------------------------------------------------------------->
-<!-- <div v-if="next['stage1']" id="sectionStage2" class="stage">
+　　　　　<div id="sectionStage2" class="stage">
         <section>
           <div class="section">
             <div class="container">
@@ -95,26 +95,6 @@
                 </div>
                 <!-- STAGE2-1　ここまで　　-->
 
-<!-- STAGE2-2 を追加
-                <div class="column">
-                  <figure class="image__container">
-                    <img src="images/stage.png" alt="">
-                  </figure>
-                  <answer-input v-bind:correct="correctAnswer['stage2']['q2']" v-on:answer-input="answerInput($event, 'stage2', 2)"></answer-input>
-                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
-                　
-                </div>
-2-2追加ここまで -->
-                  
-<!-- STAGE2-3 を追加
-                <div class="column">
-                  <figure class="image__container">
-                    <img src="images/stage.png" alt="">
-                  </figure>
-                  <answer-input v-bind:correct="correctAnswer['stage2']['q3']" v-on:answer-input="answerInput($event, 'stage2', 3)"></answer-input>
-                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
-                </div>
-2-3追加ここまで -->
 
               </div><!-- /.row -->
 
